@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Task Maker</title>
+    <link rel="icon" href="assets/webicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="userUI-BG" class="middleText">
+        <h1>Task Maker</h1>
+        <div style="text-align: left">
+            <form>
+                Name of task:<br>
+                <input class="taskMakerInputBox tnrFormat" placeholder="Type task name here" id="taskNameBox"><br>
+                Description:<br>
+                <textarea class="taskMakerInputBox tnrFormat" id="taskDescBox" style="width: 50%" placeholder="Type task description here"></textarea><br>
+                Time of Completion:<br>
+                <input type="date" class="taskMakerInputBox tnrFormat" id="taskDateBox"><br>
+                <input type="button" id="submitButton" value="Add Task" class="taskMakerInputBox submitButton">
+            </form>
+        </div>
+    </div>
+    <div id="taskList", class="middleText tnrFormat taskList">
+        <h1 class="middleText">List of Tasks</h1>
+        <table style="width:100%" id="taskTable">
+            <tbody>
+                <tr>
+                    <th>Task</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>-----</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
